@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive DecodeLabs internship project dashboard built with semantic HTML, CSS and JavaScript.">
+  <title>DecodeLabs — Internship Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="#" aria-label="DecodeLabs home">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span>Decode<span>Labs</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#resources">Resources</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Project navigation">
+      <div class="sidebar-heading">
+        <span class="eyebrow">Industrial Training</span>
+        <h2>Project 01</h2>
+      </div>
+      <nav class="side-nav">
+        <a class="side-link current" href="#overview"><span>01</span> Overview</a>
+        <a class="side-link" href="#roadmap"><span>02</span> Roadmap</a>
+        <a class="side-link" href="#skills"><span>03</span> Skills</a>
+        <a class="side-link" href="#resources"><span>04</span> Resources</a>
+      </nav>
+      <div class="progress-card">
+        <div class="progress-top"><span>Project progress</span><strong id="progress-value">72%</strong></div>
+        <div class="progress-track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Project progress"><span id="progress-bar"></span></div>
+        <p>Keep building. Every breakpoint is a learning opportunity.</p>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section id="overview" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="badge">Frontend / Project 01</span>
+          <h1 id="hero-title">Responsive<br><em>Interface.</em></h1>
+          <p>Build a flexible digital experience that feels clear, warm and effortless on every screen size.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#roadmap">Explore roadmap <span aria-hidden="true">→</span></a>
+            <a class="button secondary" href="#skills">View skills</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract responsive layout illustration" role="img">
+          <div class="art-window back"><span></span><span></span><span></span></div>
+          <div class="art-window front">
+            <div class="art-bar"><i></i><i></i><i></i></div>
+            <div class="art-grid"><span></span><span></span><span></span><span></span></div>
+            <div class="art-line"></div><div class="art-line short"></div>
+          </div>
+          <div class="art-orbit">↗</div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Project highlights">
+        <article><strong>03</strong><span>Core technologies</span></article>
+        <article><strong>100%</strong><span>Mobile-first</span></article>
+        <article><strong>WCAG</strong><span>Accessibility focus</span></article>
+        <article><strong>01</strong><span>Responsive project</span></article>
+      </section>
+
+      <section id="skills" class="content-section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div><span class="eyebrow">The foundation</span><h2 id="skills-title">Three tools.<br>One experience.</h2></div>
+          <p>Use the fundamentals first. Semantic markup gives meaning, CSS creates adaptability, and JavaScript adds purposeful interaction.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card featured"><span class="card-number">01</span><div class="icon">⌘</div><h3>HTML5</h3><p>Semantic landmarks and structural meaning for people, search engines and assistive technology.</p><a href="#roadmap">Learn more <span aria-hidden="true">↗</span></a></article>
+          <article class="skill-card"><span class="card-number">02</span><div class="icon">◫</div><h3>CSS3</h3><p>Mobile-first styling with Grid, Flexbox, fluid typography and responsive breakpoints.</p><a href="#roadmap">Learn more <span aria-hidden="true">↗</span></a></article>
+          <article class="skill-card"><span class="card-number">03</span><div class="icon">{ }</div><h3>JavaScript</h3><p>Lightweight state management and interaction that enhances the experience without distraction.</p><a href="#roadmap">Learn more <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </section>
+
+      <section id="roadmap" class="content-section roadmap-section" aria-labelledby="roadmap-title">
+        <div class="section-heading compact"><div><span class="eyebrow">Execution roadmap</span><h2 id="roadmap-title">From blueprint<br>to browser.</h2></div></div>
+        <div class="timeline">
+          <article class="timeline-item done"><span class="step">01</span><div><span class="status">Complete</span><h3>Discovery</h3><p>Define the user, the problem and the experience you want to create.</p></div></article>
+          <article class="timeline-item done"><span class="step">02</span><div><span class="status">Complete</span><h3>Wireframe</h3><p>Start in grayscale. Establish hierarchy and flow before adding decoration.</p></div></article>
+          <article class="timeline-item active"><span class="step">03</span><div><span class="status">Current</span><h3>Implementation</h3><p>Build semantic HTML, responsive CSS and useful JavaScript interactions.</p></div></article>
+          <article class="timeline-item"><span class="step">04</span><div><span class="status">Next</span><h3>Audit</h3><p>Check accessibility, responsiveness, performance and visual consistency.</p></div></article>
+        </div>
+      </section>
+
+      <section id="resources" class="cta-section" aria-labelledby="cta-title">
+        <div><span class="eyebrow">Ready to build?</span><h2 id="cta-title">Make every screen<br>feel intentional.</h2></div>
+        <button id="checklist-btn" class="button primary" type="button">Run project checklist <span aria-hidden="true">✓</span></button>
+      </section>
+      <div id="checklist-result" class="checklist-result" role="status" aria-live="polite" hidden></div>
+    </main>
+  </div>
+
+  <footer class="site-footer"><span>DecodeLabs Internship Program</span><span>Project 01 · Responsive Frontend Interface</span></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
